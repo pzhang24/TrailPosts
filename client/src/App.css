@@ -1,0 +1,670 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 90%;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  position: relative;
+  top: 6rem;
+  bottom: 3rem;
+}
+.container-secondary {
+  top: 0;
+}
+
+.xx-large {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.x-large {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: #507605;
+}
+
+.text-accent {
+  color: #e2e9ef;
+}
+
+.text-danger {
+  color: #cc0202;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #507605;
+  color: #ffffff;
+  opacity: 1;
+}
+.bg-light {
+  background-color: #f4f4f4;
+  color: #131614;
+  opacity: 1;
+  border: 1px solid #131614;
+}
+.bg-white {
+  background-color: #f4f4f4;
+  color: #131614;
+  opacity: 1;
+  border: 1px solid #131614;
+}
+.bg-accent {
+  background-color: #e2e9ef;
+  color: #131614;
+  opacity: 1;
+}
+.bg-dark {
+  background-color: #131614;
+  color: #ffffff;
+  opacity: 1;
+}
+.bg-dark-overlay {
+  background-color: #131614;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #131614;
+  padding: 0.6rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  font-weight: bold;
+  background: #dbdbdb;
+  border-radius: 1rem;
+}
+.btn.btn-primary {
+  background-color: #507605;
+  color: #ffffff;
+  opacity: 1;
+}
+.btn.btn-primary:hover {
+  background: #2f4503;
+}
+.btn.btn-light {
+  background-color: #f4f4f4;
+  color: #131614;
+  opacity: 1;
+}
+.btn.btn-light:hover {
+  background: #dbdbdb;
+}
+.btn.btn-dark {
+  background-color: #131614;
+  color: #ffffff;
+  opacity: 1;
+}
+.btn.btn-dark:hover {
+  background: #2b312d;
+}
+.btn.btn-accent {
+  background-color: #e2e9ef;
+  color: #131614;
+  opacity: 1;
+}
+.btn.btn-accent:hover {
+  background: #c1d0dd;
+}
+.btn.btn-danger {
+  background-color: #cc0202;
+  color: #ffffff;
+  opacity: 1;
+}
+.btn.btn-danger:hover {
+  background: #990202;
+}
+
+.table-container {
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 2px solid #131614;
+}
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #131614;
+}
+.table th {
+  background-color: #131614;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1rem;
+}
+.grid-lg {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.grid-item-head {
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 1.2rem 0;
+}
+.form-error {
+  color: #cc0202;
+}
+.form-text-list {
+  display: flex;
+  flex-direction: column;
+}
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+.miniform {
+  font-size: 1rem;
+}
+.miniform-fieldset {
+  background-color: #e2e9ef;
+  color: #131614;
+  opacity: 1;
+}
+.miniform-legend {
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.miniform-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+.miniform-cluster {
+  margin-bottom: 1rem;
+}
+.miniform-group {
+  margin-bottom: 0.1rem;
+}
+.miniform-main input,
+.miniform-main textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.miniform input[type='number'],
+.miniform input[type='text'],
+.miniform select {
+  padding: 0.25rem 0.5rem;
+}
+.miniform input[type='text'] {
+  min-width: 25rem;
+}
+.miniform input[type='number'] {
+  width: 5rem;
+}
+.miniform input[type='reset'],
+.miniform input[type='submit'] {
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.miniform input[type='reset'] {
+  background-color: #f4f4f4;
+  color: #131614;
+  opacity: 1;
+}
+.miniform input[type='reset']:hover {
+  background: #dbdbdb;
+}
+.miniform input[type='submit'] {
+  background-color: #507605;
+  color: #ffffff;
+  opacity: 1;
+}
+.miniform input[type='submit']:hover {
+  background: #2f4503;
+}
+.miniform label {
+  font-weight: bold;
+}
+
+.searchform-sm {
+  border: 1px solid yellow;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchform-sm input[type='text'],
+.searchform-sm input[type='submit'] {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.searchform-sm input[type='text'] {
+  flex: 1 0;
+  overflow: hidden;
+}
+.searchform-sm input[type='submit'] {
+  cursor: pointer;
+  background-color: #507605;
+  color: #ffffff;
+  opacity: 1;
+}
+.searchform-sm input[type='submit']:hover {
+  background: #2f4503;
+}
+
+.post {
+  border-top: 2px solid #131614;
+  border-bottom: 2px solid #131614;
+  padding: 1rem;
+  display: flex;
+}
+.post-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #131614;
+  border-bottom: 2px solid #131614;
+}
+.post-header {
+  flex: 0 0 25%;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.post-header .post-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+.post-main {
+  padding: 0.25rem;
+}
+.post-title {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid black;
+}
+
+.banner-sm {
+  background: url('./img/toomas-tartes-unsplash.jpg') no-repeat center
+    center/cover;
+  position: relative;
+  height: 20rem;
+}
+.banner-sm-display {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 1rem 2rem;
+  border: 2px solid #507605;
+  box-shadow: 1px 1px 3px;
+}
+
+.banner-lg {
+  background: url('./img/toomas-tartes-unsplash.jpg') no-repeat center
+    center/cover;
+  position: relative;
+  height: 45rem;
+}
+.banner-lg-display {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 1rem 2rem;
+  border: 2px solid #507605;
+  box-shadow: 1px 1px 3px;
+}
+
+.trail-info-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.trail-info-route-description {
+  padding-right: 2rem;
+}
+.trail-info-side {
+  display: flex;
+  flex-direction: column;
+}
+.trail-info-side > div {
+  margin-bottom: 1rem;
+}
+
+.trails-trail {
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #131614;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.trails-trail-info {
+  display: flex;
+  flex-direction: column;
+}
+.trails-trail:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.trails-trail > a {
+  border-bottom: 1px solid #507605;
+  font-size: 1.25rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: white;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #507605;
+  font-weight: bold;
+}
+a:hover {
+  color: #2f4503;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  opacity: 0.95;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #ffffff;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+.navbar a:hover {
+  color: #507605;
+}
+
+.navquick {
+  display: flex;
+  justify-content: center;
+}
+.navquick-start {
+  justify-content: start;
+}
+
+.landing {
+  position: relative;
+  background: url('./img/toomas-tartes-unsplash.jpg') no-repeat center
+    center/cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.landing-display {
+  width: 50%;
+  position: absolute;
+  padding: 2rem 2rem;
+  top: 25%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-radius: 0.2rem;
+  border: 2px solid #507605;
+  box-shadow: 1px 1px 3px;
+}
+
+@media (max-width: 700px) {
+  .xx-large {
+    font-size: 2rem;
+  }
+
+  .x-large {
+    font-size: 1.75rem;
+  }
+
+  .large {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
+  .grid-lg {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 1rem 0;
+  }
+
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .navbar ul {
+    justify-content: center;
+  }
+  .navbar h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .navquick {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+  }
+  .navquick > a {
+    display: block;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .navquick > button {
+    display: block;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .miniform-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .miniform-submit-btns {
+    display: inline-block;
+  }
+  .miniform input[type='text'] {
+    display: block;
+    min-width: inherit;
+  }
+
+  .searchform-sm {
+    width: 100%;
+  }
+
+  .landing {
+    min-height: 55rem;
+  }
+  .landing-display {
+    width: 95%;
+    top: 15%;
+    left: 2.5%;
+  }
+  .landing-buttons > a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .trail-info-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .post {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .banner-lg {
+    height: 55rem;
+  }
+
+  .banner-lg-display,
+  .banner-sm-display {
+    width: 95%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  }
+  .grid-lg {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    max-width: 95%;
+    padding: 1rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

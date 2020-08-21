@@ -3,6 +3,7 @@ const { check, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
+const { calcAverage } = require('../../util/utilities');
 const auth = require('../../middleware/auth');
 
 const User = require('../../models/User');
@@ -177,8 +178,14 @@ router.delete('/:user_id', auth, async (req, res) => {
 
     let trails = await Trail.find({});
     for (let trail of trails) {
-      trail.posts.filter((post) => post.user.toString() !== req.user.id);
-      trail.feedback.filter(
+      trail.posts = trail.posts.filter(
+        (post) => post.user.toString() !== req.user.id
+      );
+      trail.average_rating = calcAverage(
+        trail.posts.map((post) => post.rating)
+      );
+
+      trail.feedback = trail.feedback.filter(
         (feedback) => feedback.user.toString() !== req.user.id
       );
 

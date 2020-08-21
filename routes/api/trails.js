@@ -1,24 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../../middleware/auth');
+const { calcAverage } = require('../../util/utilities');
 const { check, validationResult } = require('express-validator');
 
 const Trail = require('../../models/Trail');
-
-// --Utility functions--
-// Calculates the average of an array of numbers with potentially undefined values
-const calcAverage = (arr) => {
-  let total;
-  let num = 0;
-  arr.forEach((number) => {
-    if (typeof number === 'number') {
-      total = typeof total === 'number' ? total + number : number;
-      num++;
-    }
-  });
-
-  return num > 0 ? total / num : undefined;
-};
 
 // --Routes--
 // @route   POST api/trails
@@ -169,7 +155,8 @@ router.post(
       trail = new Trail(fields);
 
       await trail.save();
-      res.json(trail.populate('user', ['name']));
+      await trail.populate('user', ['name']).execPopulate();
+      res.json(trail);
     } catch (error) {
       console.error(error);
       res.status(500).send('Server error');
@@ -807,7 +794,6 @@ router.patch(
       }
 
       if (req.user.id === trail.user.toString()) {
-        console.log("I'm author");
         trail.feedback = trail.feedback.map((feedback) => {
           if (feedback.id.toString() === feedback_id) {
             feedback.resolved =
@@ -819,7 +805,6 @@ router.patch(
       }
 
       if (req.user.id === feedback.user.toString()) {
-        console.log("I'm feedback ");
         trail.feedback = trail.feedback.map((feedback) => {
           if (feedback.id.toString() === feedback_id) {
             feedback.title = typeof title === 'string' ? title : feedback.title;
